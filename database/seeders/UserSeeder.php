@@ -17,14 +17,14 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        // $faker = Factory::create('id_id');
+        $faker = Factory::create('id_id');
 
-        // foreach (range(1, 10) as $item) {
-        //     User::create([
-        //         'name' => $faker->name,
-        //         'email' => $faker->email,
-        //         'password' => Hash::make('password'),
-        //     ]);
-        // }
+        foreach (range(1, 10) as $item) {
+            User::create([
+                'name' => $faker->name,
+                'email' => $faker->email,
+                'password' => Hash::make('password'),
+            ]);
+        }
     }
 }
