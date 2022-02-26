@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->foreignId('province')->nullable();
             $table->foreignId('city')->nullable();
+            $table->foreignId('district')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
